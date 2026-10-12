@@ -1,5 +1,9 @@
 <h1 align="center"><img src="assets/textures/generic_ping.png" width="56" alt=""><br>lolPing</h1>
 
+> **Ubuntu / GNOME edition:** This fork adds a native desktop extension for **Ubuntu 24.04, GNOME 46 and Wayland**. Open the ping wheel with **Super + Shift + P**, the emote wheel with **Super + Shift + E**, and pause with **Super + Shift + O**. See **[Ubuntu installation, features and source](linux/README.md)**. The original Windows/macOS documentation follows below.
+
+![Ubuntu desktop ping wheel](linux/media/wheel.png)
+
 <p align="center">
   English | <a href="README.zh-CN.md">简体中文</a>
 </p>

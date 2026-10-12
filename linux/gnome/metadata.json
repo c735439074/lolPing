@@ -1,0 +1,10 @@
+{
+  "uuid": "lolping-ubuntu@local",
+  "name": "lolPing for Ubuntu",
+  "description": "League of Legends pings and emotes on the GNOME desktop. Super+Shift+P: pings; Super+Shift+E: emotes; Super+Shift+O: pause. Local Ubuntu adaptation, not an upstream release.",
+  "shell-version": ["46"],
+  "version": 1,
+  "version-name": "0.1.0-ubuntu",
+  "settings-schema": "org.gnome.shell.extensions.lolping",
+  "url": "https://github.com/darrenprx/lolPing"
+}

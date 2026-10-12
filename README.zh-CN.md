@@ -1,5 +1,9 @@
 <h1 align="center"><img src="assets/textures/generic_ping.png" width="56" alt=""><br>lolPing</h1>
 
+> **Ubuntu / GNOME 适配版：** 本分支新增 **Ubuntu 24.04、GNOME 46、Wayland** 原生桌面扩展。**Super + Shift + P** 打开信号轮盘，**Super + Shift + E** 打开表情轮盘，**Super + Shift + O** 暂停或恢复。安装方法、功能范围和源码见 **[Ubuntu 使用说明](linux/README.md)**。下文保留上游 Windows/macOS 版文档。
+
+![Ubuntu 桌面信号轮盘](linux/media/wheel.png)
+
 <p align="center">
   <a href="README.md">English</a> | 简体中文
 </p>

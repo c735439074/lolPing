@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.lolping" path="/org/gnome/shell/extensions/lolping/">
+    <key name="ping-shortcut" type="as"><default>['&lt;Super&gt;&lt;Shift&gt;p']</default><summary>Open ping wheel</summary></key>
+    <key name="emote-shortcut" type="as"><default>['&lt;Super&gt;&lt;Shift&gt;e']</default><summary>Open emote wheel</summary></key>
+    <key name="pause-shortcut" type="as"><default>['&lt;Super&gt;&lt;Shift&gt;o']</default><summary>Pause or resume</summary></key>
+    <key name="paused" type="b"><default>false</default><summary>Pause pings and emotes</summary></key>
+    <key name="sound" type="b"><default>true</default><summary>Play original sound effects</summary></key>
+    <key name="ping-size" type="i"><default>110</default><range min="64" max="220"/><summary>Ping size in logical pixels</summary></key>
+    <key name="duration" type="d"><default>3.2</default><range min="1.0" max="6.0"/><summary>Effect duration in seconds</summary></key>
+    <key name="wheel-timeout" type="i"><default>10</default><range min="3" max="30"/><summary>Close idle wheel after this many seconds</summary></key>
+  </schema>
+</schemalist>

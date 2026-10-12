@@ -4,11 +4,13 @@
   简体中文 | <a href="README.en.md">English</a>
 </p>
 
+> **原项目：** [darrenprx/lolPing](https://github.com/darrenprx/lolPing)，由 [darrenprx](https://github.com/darrenprx) 开发。
+>
+> **本仓库只是原项目的 fork，新增了 Ubuntu / GNOME 桌面适配及相关文档。** 原有 Windows/macOS 实现来自原项目；Ubuntu 适配复用了原项目的图标和音效。本仓库不是原项目的官方发行版，游戏资源版权归 Riot Games 所有。
+
 > **Ubuntu / GNOME 适配版：** 本分支新增 **Ubuntu 24.04、GNOME 46、Wayland** 原生桌面扩展。**Super + Shift + P** 打开信号轮盘，**Super + Shift + E** 打开表情轮盘，**Super + Shift + O** 暂停或恢复。安装方法、功能范围和源码见 **[Ubuntu 使用说明](linux/README.md)**。下文保留上游 Windows/macOS 版文档。
 
 ![Ubuntu 桌面信号轮盘](linux/media/wheel.png)
-
-
 
 ## Ubuntu 快速开始
 

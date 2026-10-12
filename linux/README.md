@@ -1,6 +1,10 @@
 # lolPing Ubuntu 桌面适配版
 
-这是基于 darrenprx/lolPing 的本地 GNOME 扩展适配，适用于 **Ubuntu 24.04 / GNOME Shell 46**。
+**原项目：[darrenprx/lolPing](https://github.com/darrenprx/lolPing)，作者：[darrenprx](https://github.com/darrenprx)。**
+
+本仓库只是原项目的 fork，新增了 Ubuntu / GNOME 桌面适配及相关文档。原有 Windows/macOS 实现来自原项目，Ubuntu 适配复用了原项目的图标和音效；本仓库不是原项目的官方发行版。
+
+Ubuntu 适配适用于 **Ubuntu 24.04 / GNOME Shell 46**。
 支持 Wayland；同一套 GNOME API 也适用于 X11，但本次主要验证 Wayland。
 不需要 Node.js、Electron、C++ 编译器或 root 权限。
 

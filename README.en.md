@@ -1,5 +1,9 @@
 <h1 align="center"><img src="assets/textures/generic_ping.png" width="56" alt=""><br>lolPing</h1>
 
+> **Original project:** [darrenprx/lolPing](https://github.com/darrenprx/lolPing), developed by [darrenprx](https://github.com/darrenprx).
+>
+> **This repository is a fork that only adds Ubuntu / GNOME desktop support and related documentation.** The existing Windows/macOS implementation comes from the original project; the Ubuntu adaptation reuses its icons and sounds. This is not an official upstream release. Game assets belong to Riot Games.
+
 > **Ubuntu / GNOME edition:** This fork adds a native desktop extension for **Ubuntu 24.04, GNOME 46 and Wayland**. Open the ping wheel with **Super + Shift + P**, the emote wheel with **Super + Shift + E**, and pause with **Super + Shift + O**. See **[Ubuntu installation, features and source](linux/README.md)**. The original Windows/macOS documentation follows below.
 
 ![Ubuntu desktop ping wheel](linux/media/wheel.png)

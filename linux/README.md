@@ -23,6 +23,19 @@
 暂停会清除显示效果和正在播放的音效。锁屏时不显示，也不能呼出轮盘。
 扩展启用后随桌面会话加载；可以从面板菜单关闭。
 
+## 音效排查
+
+若轮盘正常但没有声音，请检查扩展的“音效”开关、系统音量和当前输出设备。
+本扩展使用 GNOME 系统音效通道，因此 Ubuntu 的系统音效总开关也必须开启：
+
+```sh
+gsettings get org.gnome.desktop.sound event-sounds
+# 若为 false，可开启；这也会恢复其他系统提示音
+gsettings set org.gnome.desktop.sound event-sounds true
+```
+
+蓝牙耳机连接时，音效会跟随当前系统输出设备。设置修改会即时生效，无需重启扩展。
+
 ## 安装
 
 先在本仓库根目录构建扩展包（只需要 Python 3 和 `glib-compile-schemas`；Ubuntu 24.04 默认桌面通常已具备）：

@@ -1,12 +1,69 @@
 <h1 align="center"><img src="assets/textures/generic_ping.png" width="56" alt=""><br>lolPing</h1>
 
+<p align="center">
+  简体中文 | <a href="README.en.md">English</a>
+</p>
+
 > **Ubuntu / GNOME 适配版：** 本分支新增 **Ubuntu 24.04、GNOME 46、Wayland** 原生桌面扩展。**Super + Shift + P** 打开信号轮盘，**Super + Shift + E** 打开表情轮盘，**Super + Shift + O** 暂停或恢复。安装方法、功能范围和源码见 **[Ubuntu 使用说明](linux/README.md)**。下文保留上游 Windows/macOS 版文档。
 
 ![Ubuntu 桌面信号轮盘](linux/media/wheel.png)
 
-<p align="center">
-  <a href="README.md">English</a> | 简体中文
-</p>
+
+
+## Ubuntu 快速开始
+
+本仓库的默认分支 `ubuntu-gnome` 包含原生 GNOME 桌面扩展，适用于 **Ubuntu 24.04 / GNOME 46**，已在 Wayland 下验证。
+使用时不需要安装英雄联盟、Node.js 或 Electron。
+
+### 构建和安装
+
+需要 Git、Python 3、`glib-compile-schemas` 和 `gnome-extensions`；Ubuntu 24.04 默认桌面通常已包含后两项。
+
+```sh
+git clone --branch ubuntu-gnome https://github.com/c735439074/lolPing.git
+cd lolPing
+python3 linux/build.py --output release/lolping-ubuntu@local.shell-extension.zip
+gnome-extensions install --force release/lolping-ubuntu@local.shell-extension.zip
+gnome-extensions enable lolping-ubuntu@local
+```
+
+首次安装若提示“扩展不存在”，请先保存工作，**手动注销并重新登录**，再执行最后一条启用命令。
+
+### 怎么玩
+
+| 操作 | 默认快捷键 |
+| --- | --- |
+| 信号轮盘 | **Super（Win）+ Shift + P** |
+| 表情轮盘 | **Super（Win）+ Shift + E** |
+| 暂停 / 恢复 | **Super（Win）+ Shift + O** |
+
+将鼠标放在要打信号的位置，按快捷键，移动鼠标选择，再左键点击确认。信号落在呼出时的位置。
+**数字 1–8** 可直接选择；**Esc、右键或中心区域确认**可取消。
+顶部面板的黄色问号图标提供设置入口，可修改快捷键、大小、时长和音效。
+
+### 没有声音怎么办
+
+先确认扩展的“音效”开关、系统输出设备和音量。此版使用 GNOME 的系统音效通道，**Ubuntu 的系统音效总开关关闭时，ping 也不会出声**。
+可在系统声音设置里开启，或执行：
+
+```sh
+gsettings set org.gnome.desktop.sound event-sounds true
+```
+
+这也会恢复其他系统提示音；连接蓝牙耳机时，声音通常从当前选定的蓝牙设备输出。
+
+### 功能范围
+
+支持桌面信号、8 个原版表情、光圈与弹出动画、原版音效、多显示器、静音和暂停。
+表情采用静态图配弹出/消退动画；暂不包含好友房间同步、自定义图片、轮盘布局编辑或自动更新。
+
+完整安装、卸载和测试说明见 **[Ubuntu 使用说明](linux/README.md)**。
+
+---
+
+## 上游 Windows / macOS 版本
+
+以下保留上游项目的中文说明。安装包、Alt / Ctrl 拖动、好友房间等功能属于上游 Windows/macOS 版；Ubuntu 版请使用上面的说明。
 
 <p align="center">
   把英雄联盟的信号和表情搬到整个桌面，支持 Windows 和 macOS。<br>
